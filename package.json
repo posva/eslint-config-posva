@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-posva",
+  "version": "1.0.0",
+  "description": "⚡️  eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lint",
+    "vue",
+    "awesome",
+    "sexy"
+  ],
+  "author": "posva",
+  "license": "MIT"
+}
