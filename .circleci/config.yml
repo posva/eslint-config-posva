@@ -1,93 +1,39 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
 version: 2
 
 
-references:
-  # Define node image to be used for all tests
-  container_config: &container_config
-    working_directory: ~/eslint-config-posva
-    docker:
-      - image: circleci/node:8
-  # Define workspace folder where code and dependencies will be introduced once and then cached/shared in tests
-  workspace_root: &workspace_root
-    /tmp/workspace
-  attach_workspace: &attach_workspace
-    attach_workspace:
-      at: *workspace_root
-  # Move all files and dotfiles to current working_directory
-  load_code: &load_code
-    run:
-      name: load code from workspace
-      command: |
-        mv /tmp/workspace/eslint-config-vue/* /tmp/workspace/eslint-config-vue/.[!.]* .
-  js_cache_key: &js_cache_key
-    key: npm-dependency-cache-{{ checksum "package.json" }}
-  # Move dependencies to current working_directory
-  restore_node_modules: &restore_node_modules
-    run:
-      name: Restore npm dependencies from workspace
-      command: mv /tmp/workspace/node_modules ./
-
-
 jobs:
-    # Checkout code and move to workspace
-  checkout_code:
-    <<: *container_config
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:8
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/repo
+
     steps:
       - checkout
-      - run:
-          command: |
-            mkdir -p /tmp/workspace/vue
-            mv * .[!.]* /tmp/workspace/eslint-config-vue/
-      - persist_to_workspace:
-          root: *workspace_root
-          # paths:
-          #   - eslint-config-vue
 
-  # Restore, update, and save a new dependencies cache
-  node_dependencies:
-    <<: *container_config
-    steps:
-      - *attach_workspace
-      - *load_code
+      # Download and cache dependencies
       - restore_cache:
-          <<: *js_cache_key
-      - run:
-          name: Update/install dependencies
-          command: npm install
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: npm install
+
       - save_cache:
-          <<: *js_cache_key
-          paths:
-            - ~/root/eslint-config-vue/node_modules
-      - run:
-          name: Move dependencies to workspace
-          command: |
-            mv node_modules /tmp/workspace/eslint-config-vue/
-      - persist_to_workspace:
-          root: *workspace_root
           paths:
             - node_modules
-  test:
-    <<: *container_config
-    steps:
-      - *attach_workspace
-      - *load_code
-      - run:
-          name: "Lint"
-          command: npm test
+          key: v1-dependencies-{{ checksum "package.json" }}
 
-
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - checkout_code
-      - node_dependencies:
-        requires:
-          - checkout_code
-      - test:
-          requires:
-            - checkout_code
-            -  node_dependencies
-          filters:
-            branches:
-              only: master
+      # run tests!
+      - run: npm test
