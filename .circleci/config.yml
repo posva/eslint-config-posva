@@ -1,5 +1,6 @@
 version: 2
 
+
 references:
   # Define node image to be used for all tests
   container_config: &container_config
@@ -73,6 +74,7 @@ jobs:
       - run:
           name: "Lint"
           command: npm test
+
 
 workflows:
   version: 2
