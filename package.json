@@ -4,7 +4,7 @@
   "description": "⚡️  eslint config",
   "main": "index.js",
   "scripts": {
-    "test": "eslint *.js"
+    "test": "cross-env NODE_ENV=production eslint *.js"
   },
   "keywords": [
     "lint",
@@ -24,6 +24,7 @@
     "eslint-plugin-vue": "^3.8.0"
   },
   "devDependencies": {
+    "cross-env": "^5.0.2",
     "eslint": "^4.3.0",
     "eslint-find-rules": "^3.1.1"
   },

@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'eslint:recommended',
     'standard',
     'plugin:vue/recommended',
   ],
@@ -11,8 +12,7 @@ module.exports = {
     'vue/require-v-for-key': 0,
     'import/no-webpack-loader-syntax': 0,
     'comma-dangle': ['error', 'always-multiline'],
-    'no-return-await': 2,
-    'quote-props': ['error', 'as-needed'],
-    'no-var': 2,
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'no-console': process.env.NODE_ENV === 'production' ? 1 : 0,
   },
 }
