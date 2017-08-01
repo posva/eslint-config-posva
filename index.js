@@ -13,5 +13,6 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'no-return-await': 2,
     'quote-props': ['error', 'as-needed'],
+    'no-var': 2,
   },
 }
