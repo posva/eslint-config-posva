@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'standard',
-    'plugin:vue/recommended'
+    'plugin:vue/recommended',
   ],
   parserOptions: {
     parser: 'babel-eslint',
