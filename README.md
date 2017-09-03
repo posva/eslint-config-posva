@@ -4,5 +4,21 @@
 
 > my reasonable approach to javascript
 
+## Usage
+
+```bash
+npm i -D eslint-config-posva
+```
+
+Add it to your `.eslintrc.js` file:
+
+```json
+{
+  "extends": [
+    "posva"
+  ]
+}
+```
+
 Feel free to fork and change
 
