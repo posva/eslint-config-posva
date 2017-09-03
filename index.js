@@ -21,7 +21,9 @@ module.exports = {
     // import
     'import/no-webpack-loader-syntax': 0,
     'import/default': 1,
-    'import/namespace': 2,
+    'import/namespace': ['error', {
+      allowComputed: true,
+    }],
     'import/no-anonymous-default-export': ['error', {
       allowArray: true,
       allowArrowFunction: true,
