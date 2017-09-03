@@ -20,7 +20,15 @@ Add it to your `.eslintrc.js` file:
 }
 ```
 
-Feel free to fork and change
+Of course, feel free to fork and change 🙂
+
+## Features
+
+- Based on [eslint-config-standerd](https://github.com/standard/eslint-config-standard) and `eslint:recommended`
+- [babel-eslint](https://github.com/babel/babel-eslint) for parsing
+- Plugins
+  - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import/) to better control `import`/`export` statements
+  - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/) for Vue
 
 ## License
 
