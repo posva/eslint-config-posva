@@ -22,3 +22,6 @@ Add it to your `.eslintrc.js` file:
 
 Feel free to fork and change
 
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
