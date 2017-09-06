@@ -14,6 +14,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'no-console': process.env.NODE_ENV === 'production' ? 1 : 0,
     'quote-props': ['error', 'as-needed'],
+    'no-return-assign': 0,
 
     // vue
     'vue/require-v-for-key': 0,
