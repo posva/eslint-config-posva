@@ -29,10 +29,6 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: Greenkeeper lock
-          command: npm install -g greenkeeper-lockfile@1
-
-      - run:
           name: Install dependencies
           command: npm install
 
@@ -43,11 +39,11 @@ jobs:
 
       - run:
           name: Update lock
-          command: greenkeeper-lockfile-update
+          command: ./node_modules/.bin/greenkeeper-lockfile-update
 
       # run tests!
       - run: npm test
 
       - run:
           name: upload lock
-          command: greenkeeper-lockfile-upload
+          command: ./node_modules/.bin/greenkeeper-lockfile-upload
