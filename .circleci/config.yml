@@ -42,12 +42,12 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-        name: Update lock
-        command: greenkeeper-lockfile-update
+          name: Update lock
+          command: greenkeeper-lockfile-update
 
       # run tests!
       - run: npm test
 
       - run:
-        name: upload lock
-        command: greenkeeper-lockfile-upload
+          name: upload lock
+          command: greenkeeper-lockfile-upload
