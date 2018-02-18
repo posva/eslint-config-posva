@@ -1,6 +1,6 @@
 {
   "non-interactive": true,
-  "increment": "minor",
+  "increment": "patch",
   "github": {
     "release": true,
     "releaseName": "🚀 Release %s",
