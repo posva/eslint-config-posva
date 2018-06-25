@@ -27,7 +27,7 @@
   "devDependencies": {
     "cross-env": "^5.1.4",
     "eslint": "^5.0.0",
-    "eslint-find-rules": "^3.2.2",
+    "eslint-find-rules": "^3.3.1",
     "greenkeeper-lockfile": "^1.14.0"
   },
   "peerDependencies": {
