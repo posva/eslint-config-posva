@@ -16,19 +16,19 @@
   "author": "posva",
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^8.2.6",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^7.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-vue": "^4.3.0"
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^4.7.1"
   },
   "devDependencies": {
-    "cross-env": "^5.1.4",
-    "eslint": "^5.0.0",
-    "eslint-find-rules": "^3.2.2",
-    "greenkeeper-lockfile": "^1.14.0"
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "eslint-find-rules": "^3.3.1",
+    "greenkeeper-lockfile": "^1.15.1"
   },
   "peerDependencies": {
     "eslint": ">=4.0.0"
