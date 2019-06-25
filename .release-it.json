@@ -9,7 +9,7 @@
   "npm": {
     "publish": true
   },
-  "src": {
+  "git": {
     "commitMessage": "chore(release): %s",
     "tagName": "v%s"
   },
