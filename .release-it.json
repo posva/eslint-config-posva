@@ -10,7 +10,7 @@
     "publish": true
   },
   "src": {
-    "commitMessage": "🔖 %s",
+    "commitMessage": "chore(release): %s",
     "tagName": "v%s"
   },
   "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
