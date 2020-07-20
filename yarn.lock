@@ -422,9 +422,9 @@ eslint-config-standard@^14.0.0:
   integrity sha512-Z9B+VR+JIXRxz21udPTL9HpFMyoMUEeX1G251EQ6e05WD9aPVtVBn09XUmZ259wCMlCDmYDSZG62Hhm+ZTJcUg==
 
 eslint-find-rules@^3.3.1:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-find-rules/-/eslint-find-rules-3.5.0.tgz#fe3739b68a3cfb8c596f3bac1f3f99b2d6f8ea07"
-  integrity sha512-tncRzPVV8zAUt87eAOQOmkLHdYTHm5FX2lyXCnbTL7Htat6/dNDPkPiWecUErQtygNBAbnisPZaUrzZVNHo7rQ==
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-find-rules/-/eslint-find-rules-3.6.0.tgz#e7fb38ce94df2d9d088a0b7fe2ececa2ee86abd0"
+  integrity sha512-EL5pOm/TAyst3h5ET+dFmFPHPxTUS+QKkr6rgSJpBVE0F3sV0vE6JbFp1o+5QZbAExhcpyv7rGlMfEtagoAU7A==
   dependencies:
     cliui "^3.2.0"
     eslint-rule-documentation "^1.0.0"
