@@ -16,22 +16,22 @@
   "author": "posva",
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.17.0"
   },
   "devDependencies": {
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
-    "eslint-find-rules": "^3.3.1",
+    "eslint-find-rules": "^3.6.1",
     "greenkeeper-lockfile": "^1.15.1"
   },
   "peerDependencies": {
-    "eslint": ">=5.15.3"
+    "eslint": ">=5.16.0"
   },
   "repository": {
     "type": "git",
