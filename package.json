@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-posva",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "description": "🤺  eslint config",
   "main": "index.js",
   "scripts": {
