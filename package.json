@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/eslint-parser": "^7.21.8",
-    "eslint-config-standard": "17.0.0",
+    "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-promise": "^6.1.1",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.22.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.41.0",
+    "eslint": "^8.42.0",
     "eslint-find-rules": "^4.1.0",
     "greenkeeper-lockfile": "^1.15.1"
   },
