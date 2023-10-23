@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.51.0",
+    "eslint": "^8.52.0",
     "eslint-find-rules": "^4.1.0",
     "greenkeeper-lockfile": "^1.15.1"
   },
