@@ -16,7 +16,7 @@
   "author": "posva",
   "license": "MIT",
   "dependencies": {
-    "@babel/eslint-parser": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.9",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
@@ -25,7 +25,7 @@
     "eslint-plugin-vue": "^9.20.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.7",
+    "@babel/core": "^7.23.9",
     "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
     "eslint-find-rules": "^4.1.0",
