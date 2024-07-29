@@ -16,10 +16,10 @@
   "author": "posva",
   "license": "MIT",
   "dependencies": {
-    "@babel/eslint-parser": "^7.24.8",
+    "@babel/eslint-parser": "^7.25.1",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^17.9.0",
+    "eslint-plugin-n": "^17.10.1",
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^9.27.0"
