@@ -16,7 +16,7 @@
   "author": "posva",
   "license": "MIT",
   "dependencies": {
-    "@babel/eslint-parser": "^7.25.9",
+    "@babel/eslint-parser": "^7.26.5",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^17.15.1",
