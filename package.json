@@ -25,7 +25,7 @@
     "eslint-plugin-vue": "^9.32.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.8",
+    "@babel/core": "^7.26.9",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.1",
     "eslint-find-rules": "^5.0.0",
