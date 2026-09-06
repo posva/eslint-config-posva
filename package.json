@@ -22,7 +22,7 @@
     "eslint-plugin-n": "^18.3.0",
     "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-standard": "^5.0.0",
-    "eslint-plugin-vue": "^9.33.0"
+    "eslint-plugin-vue": "^10.11.0"
   },
   "devDependencies": {
     "@babel/core": "^8.0.1",
